@@ -19,6 +19,7 @@ gparted                                                # partition editor
 kcalc                                                  # calculator
 baobab                                                 # disk usage analyzer
 gnome-keyring|polkit                                   # secret service implementation
+nvm                                                    # Node Version Manager
 
 # --------------------------------------------------- // Gaming
 steam                                                  # gaming platform
@@ -38,7 +39,6 @@ oh-my-zsh-git|zsh                                      # Optional plugin manager
 bat|zsh                                                # enhanced version of cat
 eza|zsh                                                # file lister for zsh
 duf|zsh                                                # prettier version of df for zsh
-
 
 # --------------------------------------------------- // Editor
 visual-studio-code-insiders-bin                        # MS text editor insiders build
