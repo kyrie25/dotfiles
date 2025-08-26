@@ -1,0 +1,85 @@
+# --------------------------------------------------- // System
+libinput-gestures                                      # actions touchpad gestures using libinput
+gestures                                               # gui for libinput-gestures
+wttrbar                                                # for weather
+python-requests|wttrbar                                # script dependency
+ddcui                                                  # GUI to control brightness for external monitors
+power-profiles-daemon                                  # for managing power profiles from waybar
+
+# --------------------------------------------------- // AUR
+alhp-keyring|alhp-mirrorlist                           # Arch Linux prebuilt & optimized packages mirror, see https://somegit.dev/ALHP/ALHP.GO
+
+# --------------------------------------------------- // Misc
+xdg-desktop-portal-gtk                                 # xdg desktop portal using gtk
+wf-recorder                                            # Screen recorder for wlroots-based compositors such as sway
+emote                                                  # emoji picker gtk3
+discord                                                # chat software
+zen-browser                                            # Firefox-based cool-looking browser
+gparted                                                # partition editor
+kcalc                                                  # calculator
+baobab                                                 # disk usage analyzer
+gnome-keyring|polkit                                   # secret service implementation
+
+# --------------------------------------------------- // Gaming
+steam                                                  # gaming platform
+gamemode                                               # daemon and library for game optimizations
+mangohud                                               # system performance overlay
+gamescope                                              # micro-compositor for gaming
+lutris                                                 # Lutris is an open source gaming platform for Linux
+
+# --------------------------------------------------- // Music
+cava                                                   # audio visualizer
+spotify                                                # proprietary music streaming service
+spicetify-cli                                          # cli to customize spotify client
+
+# --------------------------------------------------- // Shell
+# --------------------------------------------------- // zsh
+oh-my-zsh-git|zsh                                      # Optional plugin manager for zsh
+bat|zsh                                                # enhanced version of cat
+eza|zsh                                                # file lister for zsh
+duf|zsh                                                # prettier version of df for zsh
+
+
+# --------------------------------------------------- // Editor
+visual-studio-code-insiders-bin                        # MS text editor insiders build
+
+
+# --------------------------------------------------- // VLC & plugins
+vlc                                                    # base media player
+
+# Codecs
+vlc-plugin-matroska                                    # Matroska container support (mkv, mka, mks)
+vlc-plugin-mpg123                                      # MPG1/2/3 codec support (mp3)
+vlc-plugin-mad                                         # MPEG audio decoder
+vlc-plugin-vorbis                                      # Vorbis codec support (ogg)
+vlc-plugin-dav1d                                       # AV1 codec support
+vlc-plugin-opus                                        # Opus codec support
+vlc-plugin-faad2                                       # AAC codec support
+vlc-plugin-x264                                        # H.264/AVC codec support
+vlc-plugin-x265                                        # H.265/HEVC codec support
+vlc-plugin-ogg                                         # OGG container support
+vlc-plugin-flac                                        # FLAC codec support
+vlc-plugin-jpeg                                        # JPEG support
+vlc-plugin-png                                         # PNG support
+vlc-plugin-vpx                                         # VP8/VP9 codec support
+vlc-plugin-ass                                         # ASS/SSA subtitle support
+vlc-plugin-srt                                         # SRT subtitle support
+vlc-plugin-freetype                                    # Subtitle rendering
+
+# Other plugins
+vlc-plugin-ffmpeg                                      # FFmpeg tools
+vlc-plugin-gnutls                                      # GnuTLS
+vlc-plugin-pipewire                                    # PipeWire support
+vlc-plugin-pulseaudio                                  # PulseAudio support
+vlc-plugin-jack                                        # JACK support
+vlc-plugin-alsa                                        # ALSA support
+vlc-plugin-quicksync                                   # QuickSync support
+vlc-plugin-libsecret                                   # libsecret/gnome-keyring support
+vlc-plugin-notify                                      # Desktop notifications
+vlc-plugin-xml                                         # XML support
+vlc-plugin-tag                                         # Tags
+
+# --------------------------------------------------- // IME
+fcitx5                                                # Flexible Input Method Framework
+fcitx5-configtool                                     # Configuration tool for fcitx5 + fcitx5-remote
+# fcitx5-unikey                                         # Unikey (Vietnamese) engine for fcitx5
