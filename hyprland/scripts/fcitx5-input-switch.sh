@@ -1,22 +1,11 @@
 #!/usr/bin/env bash
-# Place this file in ~/.local/lib/hyde
+# Place this file in ~/.config/hypr/scripts/
 
-scrDir=$(dirname "$(realpath "$0")")
+scrDir=$HOME/.local/lib/hyde
 # shellcheck disable=SC1091
 source "$scrDir/globalcontrol.sh"
 
-CAPS_SYMBOL="%{F#c0392b}⇧%{F-}"
 IMLIST_FILE="/tmp/fcitx5-imlist"
-
-capslock() {
-  xset -q | grep Caps | grep -q on && {
-    echo on
-    return 0
-  } || {
-    echo off
-    return 1
-  }
-}
 
 # Print out identifier of current input method
 current() {

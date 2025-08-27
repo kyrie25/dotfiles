@@ -20,6 +20,7 @@ kcalc                                                  # calculator
 baobab                                                 # disk usage analyzer
 gnome-keyring|polkit                                   # secret service implementation
 nvm                                                    # Node Version Manager
+socat                                                  # multipurpose relay for bidirectional data transfer
 
 # --------------------------------------------------- // Gaming
 steam                                                  # gaming platform
