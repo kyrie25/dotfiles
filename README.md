@@ -14,6 +14,10 @@ This setup mainly uses configurations that are meant for Arch Linux + [HyDE](htt
 
 This will get updated from time to time as I tweak my setup (or when I remember that I tweaked my setup).
 
+> [!WARNING]\
+> **DO NOT** blindly copy these configurations, otherwise your system might not work as intended, or even boot.\
+> Know what you're doing and adapt them to your own needs.
+
 # repository structure
 
 - `config/` - contains configurations for other applications
