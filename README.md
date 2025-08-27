@@ -2,8 +2,13 @@
 
 Collection of dotfiles used for my personal setup
 
-![img](./.github/images/desktop_1.png)
-![img](./.github/images/desktop_2.png)
+![img](./.github/images/desktop_3.png)
+
+<details>
+  <summary>More screenshots</summary>
+  <img src="./.github/images/desktop_1.png" alt="img" />
+  <img src="./.github/images/desktop_2.png" alt="img" />
+</details>
 
 This setup mainly uses configurations that are meant for Arch Linux + [HyDE](https://github.com/HyDE-Project/HyDE)/Hyprland, tailored to my personal needs.
 
@@ -11,11 +16,12 @@ This will get updated from time to time as I tweak my setup (or when I remember 
 
 # repository structure
 
+- `config/` - contains configurations for other applications
+- `discord/` - QuickCSS and stuff
 - `hyprland/` - contains configurations for Hyprland and related applications
   - `scripts/` - useful scripts for Hyprland keybinds
   - `pkg_user.lst` - list of packages to install to get you started as quickly as possible
-- `config/` - contains configurations for other applications
-- `discord/` - QuickCSS and stuff
+- `systemd/` - contains systemd service files
 - `zsh/` - zsh configurations
 
 # useful resources

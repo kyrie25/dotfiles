@@ -3,7 +3,7 @@
 # Place this file in ~/.config/hypr/scripts/
 # Adapted from HyDE's brightnesscontrol.sh
 # This script adjusts brightness for both laptop and external monitors using brightnessctl.
-# It changes brightness of all monitors simultaneously.
+# It changes brightness of all monitors simultaneously. Only works if you have brightnessctl-git installed.
 
 scrDir=~/.local/lib/hyde
 # shellcheck disable=SC1091

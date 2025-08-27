@@ -3,7 +3,9 @@ libinput-gestures                                      # actions touchpad gestur
 gestures                                               # gui for libinput-gestures
 wttrbar                                                # for weather
 python-requests|wttrbar                                # script dependency
+brightnessctl-git                                      # for brightness control of all monitors
 ddcui                                                  # GUI to control brightness for external monitors
+ddcci-driver-linux-dkms                                # expose external monitors to brightnessctl, see https://wiki.archlinux.org/title/Backlight#External_monitors
 power-profiles-daemon                                  # for managing power profiles from waybar
 
 # --------------------------------------------------- // AUR
