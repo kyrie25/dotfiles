@@ -9,6 +9,7 @@ ddcci-driver-linux-dkms                                # expose external monitor
 power-profiles-daemon                                  # for managing power profiles from waybar
 
 # --------------------------------------------------- // AUR
+pacman-contrib                                         # for paccache, see https://wiki.archlinux.org/title/Pacman#Cleaning_the_package_cache
 alhp-keyring|alhp-mirrorlist                           # Arch Linux prebuilt & optimized packages mirror, see https://somegit.dev/ALHP/ALHP.GO
 
 # --------------------------------------------------- // Misc
