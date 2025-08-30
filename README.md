@@ -20,6 +20,19 @@ This will get updated from time to time as I tweak my setup (or when I remember 
 
 # repository structure
 
+```
+. /
+├── config/
+├── discord/
+├── hyprland/
+│   ├── scripts/
+│   └── pkg_user.lst
+├── modprobe/
+├── systemd/
+├── udev/
+└── zsh/
+```
+
 - `config/` - contains configurations for other applications
 - `discord/` - QuickCSS and stuff
 - `hyprland/` - contains configurations for Hyprland and related applications
