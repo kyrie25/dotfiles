@@ -10,6 +10,8 @@ Before=sddm.service
 [Service]
 Type=oneshot
 ExecStart=/usr/bin/modprobe ddcci_backlight
+# This doesn't auto-detect Nvidia monitors, see https://gitlab.com/ddcci-driver-linux/ddcci-driver-linux/-/issues/7#note_151296583
+# ExecStartPost=/bin/sh -c "echo 'ddcci 0x37' > /sys/bus/i2c/devices/i2c-16/new_device"
 ExecStop=/usr/bin/modprobe --remove ddcci_backlight
 RemainAfterExit=yes
 
