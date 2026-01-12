@@ -1,0 +1,41 @@
+description: Install Stella Sora
+game_slug: stella-sora
+gogslug: ""
+humblestoreid: ""
+installer_slug: stella-sora-installer
+name: Stella Sora
+notes: "Installs Stella Sora's launcher and vcrun2019"
+runner: wine
+script:
+  files:
+    - stellainstaller:
+        filename: StellaSora_EN_Gamelauncher-1.6.0-setup.exe
+        url: https://launcher-pkg-ss-en.yo-star.com/install_pkg/game_launcher/StellaSora_EN/StellaSora_EN_Gamelauncher-1.6.0-setup.exe
+
+  game:
+    exe: drive_c/YostarGames/StellaSora_EN_Gamelauncher/StellaSora_EN_Gamelauncher.exe
+    prefix: $GAMEDIR
+
+  installer:
+    - task:
+        arch: win64
+        name: create_prefix
+        prefix: $GAMEDIR
+    - task:
+        app: vcrun2019 corefonts
+        description: Installing Visual C++ Runtime 2019, corefonts
+        name: winetricks
+        prefix: $GAMEDIR
+    - task:
+        description: "Install Stella Sora's launcher, then close the prompt once installation is complete"
+        executable: stellainstaller
+        name: wineexec
+        prefix: $GAMEDIR
+
+  wine:
+    dxvk: true
+
+slug: stella-sora-installer
+steamid: null
+version: Stella Sora Installer
+year: 2024

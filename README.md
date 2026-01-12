@@ -38,9 +38,10 @@ This will get updated from time to time as I tweak my setup (or when I remember 
 - `hyprland/` - contains configurations for Hyprland and related applications
   - `scripts/` - useful scripts for Hyprland keybinds
   - `pkg_user.lst` - list of packages to install to get you started as quickly as possible
-- `modprobe/` - contains modprobe configurations
-- `systemd/` - contains systemd service files
-- `udev/` - contains udev rules
+- `lutris/` - lutris game installation scripts
+- `modprobe/` - contains modprobe configurations, placed in `/etc/modprobe.d/`
+- `systemd/` - contains systemd service files, placed in `/etc/systemd/system/`
+- `udev/` - contains udev rules, placed in `/etc/udev/rules.d/`
 - `zsh/` - zsh configurations
 
 # useful resources

@@ -1,0 +1,54 @@
+description: "Installs the STOVE Launcher and WebView2"
+game_slug: chaos-zero-nightmare--1
+gogslug: ""
+humblestoreid: ""
+installer_slug: chaos-zero-nightmare
+name: Chaos Zero Nightmare
+notes: ""
+runner: wine
+script:
+  files:
+    - setup:
+        filename: STOVESetup.exe
+        referer: store.onstove.com
+        url: https://sgs-live-dl.game.playstove.com/game/lcs/STOVESetup.exe?launcherfilename=STOVESetup.exe
+    - webview:
+        filename: MicrosoftEdgeWebview2Setup.exe
+        url: https://go.microsoft.com/fwlink/p/?LinkId=2124703&clcid=0x409
+  game:
+    exe: $GAMEDIR/drive_c/windows/explorer.exe
+    args: sgup://run/STOVE_CHAOSZERO
+    prefix: $GAMEDIR
+  installer:
+    - task:
+        arch: win64
+        description: Creating 64bit Wine prefix.
+        name: create_prefix
+        prefix: $GAMEDIR
+    - task:
+        arch: win64
+        description: Setting Windows 10 mode for Wine
+        key: Version
+        name: set_regedit
+        path: HKEY_CURRENT_USER\Software\Wine
+        prefix: $GAMEDIR
+        value: win10
+    - task:
+        app: arial
+        name: winetricks
+        prefix: $GAMEDIR
+    - task:
+        description: Running Stove Installer.
+        executable: setup
+        name: wineexec
+        prefix: $GAMEDIR
+    - task:
+        description: Installing WebView2.
+        executable: webview
+        name: wineexec
+        prefix: $GAMEDIR
+
+slug: chaos-zero-nightmare
+steamid: null
+version: 2026-01-11
+year: 2020
