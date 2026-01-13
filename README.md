@@ -27,6 +27,7 @@ This will get updated from time to time as I tweak my setup (or when I remember 
 ├── hyprland/
 │   ├── scripts/
 │   └── pkg_user.lst
+├── lutris/
 ├── modprobe/
 ├── systemd/
 ├── udev/
